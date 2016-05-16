@@ -52,12 +52,12 @@ public calculadora(float num_1, float num_2){
 	}
 	public void coseno(float num){
 		float cos = (float)Math.cos(num);
-		JOptionPane.showMessageDialog(null, "El seno de: " +Float.toString(num)+"es ="+Float.toString(cos));
+		JOptionPane.showMessageDialog(null, "El coseno de: " +Float.toString(num)+"es ="+Float.toString(cos));
 		
 	}
 	public void tangente(float num){
 		float tan = (float)Math.tan(num);
-		JOptionPane.showMessageDialog(null, "El seno de: " +Float.toString(num)+"es ="+Float.toString(tan));
+		JOptionPane.showMessageDialog(null, "El tangente de: " +Float.toString(num)+"es ="+Float.toString(tan));
 		
 	}
 }

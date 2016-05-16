@@ -17,6 +17,5 @@ public static void main(String[] args) {
 	rectangulo.figur_rec(rectangulo.get_alto(), rectangulo.get_ancho());		
 
 }
-
 }
 
