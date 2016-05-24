@@ -27,11 +27,11 @@ public class Descansar {
     		int resp,resp2;
     		resp=JOptionPane.showConfirmDialog(null,"Estas en dia de semana?");
     		resp2=JOptionPane.showConfirmDialog(null,"Estas en vacaciones?");
-    		if(resp!= 1 && resp2!=0){
+    		if(resp!= 0 && resp2!=1){
     	System.out.println("Puesdes descansar");
     		return true;}
-    		else
-    	{System.out.println("No,Puesdes descansar");
+    		else{
+    	System.out.println("No,Puesdes descansar");
     		return false;}
     			
     		
