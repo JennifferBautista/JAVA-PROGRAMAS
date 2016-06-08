@@ -44,11 +44,9 @@ public class digitos_aleatorios {
 								if(aux.equals(String.valueOf(mat[f][c]).substring(1,2)))
 									System.out.println(mat[f][c]);
 					}
-					else
-						if((String.valueOf(mat[f][c])).equals(String.valueOf(mat[f][c]).substring(1,2)))
-							System.out.println(mat[f][c]);			
-				}
+					
 				
+				}
 			}
-		}
+	  }
 }
