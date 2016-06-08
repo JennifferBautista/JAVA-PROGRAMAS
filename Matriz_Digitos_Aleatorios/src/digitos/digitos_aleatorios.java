@@ -36,10 +36,13 @@ public class digitos_aleatorios {
 			aux=String.valueOf(digito);
 			for(int f=0; f<mat.length; f++){
 				for(int c=0; c<mat[f].length; c++){
-					if(String.valueOf(mat[f][c]).length()>1)
+					if(String.valueOf(mat[f][c]).length()>0)
 					{
-						if(aux.equals(String.valueOf(mat[f][c]).substring(1,2)))
+						if(aux.equals(String.valueOf(mat[f][c]).substring(0)))
 							System.out.println(mat[f][c]);
+							if(String.valueOf(mat[f][c]).length()>1)
+								if(aux.equals(String.valueOf(mat[f][c]).substring(1,2)))
+									System.out.println(mat[f][c]);
 					}
 					else
 						if((String.valueOf(mat[f][c])).equals(String.valueOf(mat[f][c]).substring(1,2)))
