@@ -8,9 +8,9 @@ public class digitos_aleatorios {
 	public  digitos_aleatorios() {
 	        int filas, columnas;
 	        Scanner reader = new Scanner(System.in);
-	        System.out.println("Cuantas filas desea en  la matriz:");
+	        System.out.print("Cuantas filas desea en  la matriz:");
 	        filas=reader.nextInt();
-	        System.out.println("Cuantas columnas desea en  la matriz:");
+	        System.out.print("Cuantas columnas desea en  la matriz:");
 	        columnas=reader.nextInt();
 	        mat=new int  [filas][columnas];
 		for(int f=0;f<mat.length;f++) {
@@ -22,27 +22,22 @@ public class digitos_aleatorios {
 		 System.out.println("*** M A T R I Z***");
 	        for(int f=0;f<mat.length; f++){
 	            for(int c=0;c<mat[f].length;c++) {
-	                System.out.print(mat[f][c]+"   ");
+	                System.out.print(mat[f][c]+"\t");
 	            }
 	            System.out.println();
 	        }
 	    }
 	  public void generar_digitos(){
-		int digito;
-		String aux;
+		int digito, UltimoDigito=0;
 		Scanner reader = new Scanner(System.in);
 		System.out.println("BUSCAR DIGITO: ");
 			digito=reader.nextInt();
-			aux=String.valueOf(digito);
 			for(int f=0; f<mat.length; f++){
 				for(int c=0; c<mat[f].length; c++){
-					if(String.valueOf(mat[f][c]).length()>0)
+					UltimoDigito=(mat[f][c])%10;
+					if(UltimoDigito==digito)
 					{
-						if(aux.equals(String.valueOf(mat[f][c]).substring(0)))
-							System.out.println(mat[f][c]);
-							if(String.valueOf(mat[f][c]).length()>1)
-								if(aux.equals(String.valueOf(mat[f][c]).substring(1,2)))
-									System.out.println(mat[f][c]);
+						 System.out.println(mat[f][c]);
 					}
 					
 				
