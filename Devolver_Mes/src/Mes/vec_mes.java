@@ -20,16 +20,16 @@ public class vec_mes {
 		this.resp = resp;
 		}
 		public void devolver_Nombre(int resp){
-		resp=0;
+		int aux=0;
 		resp= Integer.parseInt(JOptionPane.showInputDialog("Ingrese un numero"));
 		
-			if(( 1<= resp)&& (resp<=12)){
-					System.out.println(vecMeses[resp-1]);
-					for(int x=1; x<=12; x++){
-						devolver_Nombre(x);
-			}}
-			else
-				System.out.println("INGRESE DE NUEVO, NUMERO DE MES INCORRECTO");
+			if(( resp<= 12)&& (resp>=1)){
+					
+					for(int x=0; x<12; x++){
+						aux=resp-1;
+						System.out.println(vecMeses[aux]);
 
-			}
+
+					}}
+}
 }
