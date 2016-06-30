@@ -13,9 +13,9 @@ public class digitos_aleatorios {
 	        System.out.print("Cuantas columnas desea en  la matriz:");
 	        columnas=reader.nextInt();
 	        mat=new int  [filas][columnas];
-		for(int f=0;f<mat.length;f++) {
-            for(int c=0;c<mat[f].length;c++) {
-             mat[f][c]=(int)(Math.random()*100 + 1);}
+	        for(int f=0;f<mat.length;f++) {
+	        	for(int c=0;c<mat[f].length;c++) {
+	        		mat[f][c]=(int)(Math.random()*100 + 1);}
         }
 	}
 	public  void imprimir_matriz() {
