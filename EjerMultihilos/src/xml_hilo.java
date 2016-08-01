@@ -34,9 +34,9 @@ public class xml_hilo implements Runnable {
 			}
 			
 			XStream xstream = new XStream(new DomDriver());
-			xstream.alias("Estudiante", Estudiante.class);
+			xstream.alias("Alumno", Estudiante.class);
 			List lst_personas = new ArrayList();
-			List newJoe= (List) xstream.fromXML(informacion_xml);
+			lst_personas = (List) xstream.fromXML(informacion_xml);
 			Estudiante a = new Estudiante();
 			System.out.println("===Esmeraldas===");
 			for(int i=0;i<6;i++){
