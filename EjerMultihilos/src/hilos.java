@@ -19,7 +19,7 @@ public class hilos implements Runnable {
 	private String matricula=null; 
 	private String direccion = null; 
 	private String ciudad=null;
-	private String esmeraldas="Guayaquil";
+	private String guayaquil="Guayaquil";
 	private int edad=0; 
 	private Thread fichero; 
 	private Thread xml; 
@@ -39,6 +39,7 @@ public class hilos implements Runnable {
 		try{
 			in = new BufferedReader(new FileReader("personas.txt"));
 			String line; 
+			System.out.println("================PERSONAS=============");
 			while ((line=in.readLine())!= null){
 				 sacarDatosGuayaquil(line);
 			}
@@ -110,7 +111,7 @@ public class hilos implements Runnable {
 	}
 	
 	public void guayaquil(){
-		if(this.esmeraldas.equals(this.ciudad))
+		//if(this.guayaquil.equals(this.ciudad))
 			informacion(); 
 	}
 	

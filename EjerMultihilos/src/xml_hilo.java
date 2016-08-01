@@ -38,13 +38,13 @@ public class xml_hilo implements Runnable {
 			List lst_personas = new ArrayList();
 			lst_personas = (List) xstream.fromXML(informacion_xml);
 			Estudiante a = new Estudiante();
-			System.out.println("===Esmeraldas===");
+			System.out.println("===============PERSONAS DE Esmeraldas===============");
 			for(int i=0;i<6;i++){
 			a = (Estudiante) lst_personas.get(i);
 			if(a.getCiudad().equals("Esmeraldas"))
 			System.out.println("Matricula: "+a.getMatricula()+" Nombre: "+a.getNombres()+" Direccion: "+a.getDireccion()+" Ciudad: "+a.getCiudad()+" Edad: "+a.getEdad());
 		}
-			System.out.println("MENORES DE 18");
+			System.out.println("===============MENORES DE 18========================");
 
 			for(int i=0;i<6;i++){
 				a = (Estudiante) lst_personas.get(i);
